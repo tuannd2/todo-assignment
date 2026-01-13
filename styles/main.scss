@@ -1,0 +1,92 @@
+@use "variables" as *;
+@use "base";
+
+.todo {
+    margin: 40px auto;
+    display: block;
+    max-width: 45vw;
+    background: $bg-body;
+    border-radius: 12px;
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: $bg-header;
+        padding: 1rem;
+        border-radius: 12px;
+
+        #day-text {
+            color: $text-violet;
+
+            #day-ordinal-text {
+                font-weight: 500;
+            }
+        }
+
+        #month-text {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #add-btn {
+            position: absolute;
+            right: 1.5rem;
+            bottom: -1.5rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            background: $checkbox-active;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    main {
+        padding: 10px;
+        height: 640px;
+        overflow-y: auto;
+
+        #todo-list {
+            padding: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0 20px;
+            gap: 12px;
+            color: $text-dark;
+
+            .todo-text {
+                flex: 1;
+                min-width: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &.done .todo-text {
+                text-decoration: line-through;
+            }
+
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                accent-color: $checkbox-active;
+                cursor: pointer;
+                margin: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        .todo-item.input {
+            input[type="text"] {
+                padding: 4px 8px;
+                font-size: 16px;
+            }
+        }
+    }
+}

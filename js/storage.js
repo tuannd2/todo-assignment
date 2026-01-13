@@ -1,0 +1,10 @@
+const STORAGE_KEY = "todos";
+
+export function getTodos() {
+  const data = localStorage.getItem(STORAGE_KEY);
+  return data ? JSON.parse(data) : [];
+}
+
+export function saveTodos(todos) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
+}

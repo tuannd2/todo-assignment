@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #eee;
+}
+
+.todo {
+  margin: 40px auto;
+  display: block;
+  max-width: 45vw;
+  background: #bdbdbd;
+  border-radius: 12px;
+}
+.todo header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f5d7a7;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.todo header #day-text {
+  color: #7b3fe4;
+}
+.todo header #day-text #day-ordinal-text {
+  font-weight: 500;
+}
+.todo header #month-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.todo header #add-btn {
+  position: absolute;
+  right: 1.5rem;
+  bottom: -1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #e35a3c;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.todo main {
+  padding: 10px;
+  height: 640px;
+  overflow-y: auto;
+}
+.todo main #todo-list {
+  padding: 0;
+}
+.todo main .todo-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 20px;
+  gap: 12px;
+  color: #222;
+}
+.todo main .todo-item .todo-text {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.todo main .todo-item.done .todo-text {
+  text-decoration: line-through;
+}
+.todo main .todo-item input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  accent-color: #e35a3c;
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;
+}
+.todo main .todo-item.input input[type=text] {
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */
