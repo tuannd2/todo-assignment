@@ -2,6 +2,8 @@
 
 A mini project built with **HTML, SCSS, and Vanilla JavaScript**, following the provided UI mockup and requirements.
 
+<img width="699" height="800" alt="image" src="https://github.com/user-attachments/assets/76122149-4afa-4c28-9b76-b741908b680a" />
+
 ---
 
 ## Features
