@@ -32,20 +32,20 @@ A mini project built with **HTML, SCSS, and Vanilla JavaScript**, following the 
 ```text
 .
 ├─ index.html
-├─ src/
-│  ├─ styles/
-│  │  ├─ _variables.scss
-│  │  ├─ _base.scss
-│  │  ├─ _layout.scss
-│  │  ├─ _todo.scss
-│  │  └─ main.scss
-│  └─ js/
-│     ├─ storage.js
-│     ├─ date.js
-│     ├─ todo.js
-│     └─ main.js
+├─ styles/
+│  ├─ _variables.scss
+│  ├─ _base.scss
+│  ├─ _layout.scss
+│  ├─ _todo.scss
+│  └─ main.scss
+├─ js/
+│  ├─ storage.js
+│  ├─ date.js
+│  ├─ todo.js
+│  └─ main.js
 ├─ dist/
-│  └─ main.css
+│  ├─ main.css
+│  └─ main.css.map
 └─ README.md
 
 ```
@@ -56,7 +56,7 @@ A mini project built with **HTML, SCSS, and Vanilla JavaScript**, following the 
 
 #### 1. Compile SCSS (watch mode)
 ```text
-sass --watch src/styles/main.scss dist/main.css
+sass --watch styles/main.scss dist/main.css
 ```
 
 #### 2. Open the app

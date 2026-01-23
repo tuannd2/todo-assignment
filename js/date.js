@@ -14,9 +14,6 @@ export function renderDate() {
 
 function getOrdinalSuffix(day) {
   switch (day) {
-    case day >= 11 && day <= 13:
-      return "th";
-
     case day % 10 === 1:
       return "st";
 

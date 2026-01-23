@@ -1,9 +1,8 @@
 @use "variables" as *;
 @use "base";
 
-.todo {
+.todo-app {
     margin: 40px auto;
-    display: block;
     max-width: 45vw;
     background: $bg-body;
     border-radius: 12px;
